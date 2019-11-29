@@ -17,7 +17,6 @@
 
 
              <Image Source="AppIcon.png" Margin="50" 
-                   
                     AutomationProperties.IsInAccessibleTree="True"
                     AutomationProperties.Name="Boton"
                     AutomationProperties.HelpText="Muestra una alerta">

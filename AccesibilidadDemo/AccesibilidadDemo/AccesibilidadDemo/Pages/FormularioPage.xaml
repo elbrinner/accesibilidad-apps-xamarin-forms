@@ -32,7 +32,9 @@
 
            <DatePicker AutomationProperties.IsInAccessibleTree="True" AutomationProperties.LabeledBy="{x:Reference nascimiento }"></DatePicker>
 
-            <Button Text="Registrar" x:Name="sumit" Clicked="Summit_click"> </Button>
+             <Button Text="Registrar" x:Name="sumit0" Clicked="Summit_click0"> </Button>
+
+            <Button Text="Registrar 2" x:Name="sumit" Clicked="Summit_click"> </Button>
 
 
              
@@ -47,7 +49,5 @@
 
           
         </StackLayout>
-
-
     </ContentPage.Content>
 </ContentPage>

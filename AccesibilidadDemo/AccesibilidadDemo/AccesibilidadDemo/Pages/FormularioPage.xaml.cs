@@ -36,6 +36,18 @@ namespace AccesibilidadDemo.Pages
 
         }
 
-       
+        private async void Summit_click0(object sender, EventArgs e)
+        {
+
+            MiActivityIndicator.IsRunning = true;
+
+           
+            await Task.Delay(35000);
+            await DisplayAlert("Suceso", "Datos enviados con exito", "0k");
+
+
+        }
+
+
     }
 }
