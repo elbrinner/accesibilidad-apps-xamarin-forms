@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Estilo sistema"
+             x:Class="AccesibilidadDemo.Pages.StylePage">
+    <ContentPage.Content>
+
+        <StackLayout>
+
+<Label Text="Title style"
+              Style="{DynamicResource TitleStyle}" />
+            <Label Text="Subtitle text style"
+              Style="{DynamicResource SubtitleStyle}" />
+            <Label Text="Body style"
+              Style="{DynamicResource BodyStyle}" />
+            <Label Text="Caption style"
+              Style="{DynamicResource CaptionStyle}" />
+            <Label Text="List item detail text style"
+              Style="{DynamicResource ListItemDetailTextStyle}" />
+            <Label Text="List item text style"
+              Style="{DynamicResource ListItemTextStyle}" />
+            <Label Text="No style"/>
+           
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

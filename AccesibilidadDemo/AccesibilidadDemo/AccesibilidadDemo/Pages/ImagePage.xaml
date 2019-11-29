@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Imagen"
+             x:Class="AccesibilidadDemo.Pages.ImagePage">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+
+            <Label Text="En esta página, tengo dos imagenes que es un boton en realidad"></Label>
+
+            <Image Source="AppIcon.png" WidthRequest="50" TabIndex="1">
+                <Image.GestureRecognizers>
+                     <TapGestureRecognizer Tapped="OnImageTapped"></TapGestureRecognizer>
+                 </Image.GestureRecognizers>
+
+            </Image>
+
+
+             <Image Source="AppIcon.png" Margin="50" 
+                   
+                    AutomationProperties.IsInAccessibleTree="True"
+                    AutomationProperties.Name="Boton"
+                    AutomationProperties.HelpText="Muestra una alerta">
+                 <Image.GestureRecognizers>
+                     <TapGestureRecognizer Tapped="OnImageTapped"></TapGestureRecognizer>
+                 </Image.GestureRecognizers>
+             </Image>
+
+
+            <Button Text="No hago nada"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

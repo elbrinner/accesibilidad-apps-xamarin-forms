@@ -1,11 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AccesibilidadDemo.Pages.HomePage">
+             x:Class="AccesibilidadDemo.Pages.HomePage" Title="Home">
     <ContentPage.Content>
-        <StackLayout>
-            <Button Text="Texto 1" Clicked="Texto1_click"></Button>
-            <Button Text="Texto 2" Clicked="Texto2_click"></Button>
+        <StackLayout Margin="0,20,0,0">
+
+
+            <Button Text="Texto 1" Clicked="Texto1_click" TabIndex="5"></Button>
+            <Button Text="Texto 2" Clicked="Texto2_click" TabIndex="2"></Button>
+            <Button Text="Texto estilo" Clicked="Texto3_click" TabIndex="9"></Button>
+            <Button Text="Texto 4" Clicked="Texto4_click" TabIndex="3"></Button>
+
+            <Button Text="Imagen" Clicked="Imagen_click" TabIndex="7"></Button>
+
+            <Button Text="Formulario" Clicked="Formulario_click" TabIndex="1"></Button>
+
+
+            
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

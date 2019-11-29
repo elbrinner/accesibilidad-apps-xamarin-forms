@@ -26,5 +26,27 @@ namespace AccesibilidadDemo.Pages
         {
             await Navigation.PushAsync(new TextoSistemaPage());
         }
+
+        private async void Texto3_click(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new StylePage());
+        }
+
+        private async void Formulario_click(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FormularioPage());
+        }
+
+        private async void Imagen_click(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ImagePage());
+        }
+
+        private async void Texto4_click(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new TextoContrastePage());
+        }
+
+
     }
 }

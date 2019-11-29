@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Problemas con textos"
+             x:Class="AccesibilidadDemo.Pages.TextoContrastePage">
+    <ContentPage.Content>
+
+        <StackLayout Margin="20">
+            <Label Text="Titulo del texto" FontSize="Title"></Label>
+
+            <Label Text="Un factor muy importante a tener en cuenta en nuestra aplicación es la accesibilidad.Cuando hablamos de accesibilidad, hablamos de hacer nuestra app lo más accesible posible para todos los perfiles de usuarios (acceso universal a la información)." TextColor="#5a7b99"></Label> 
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

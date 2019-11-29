@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AccesibilidadDemo.Pages.TextoFijoPage" Title="Página 1 - textp">
+             x:Class="AccesibilidadDemo.Pages.TextoFijoPage" Title="Texto 1">
     <ContentPage.Content>
         <StackLayout>
 
@@ -10,6 +10,7 @@
             <Label Text="Subtitulo"  FontSize="16" />
             <Label Text="Soy un texto simples y estoy en una label. ¿Soy accesible?"  FontSize="20" />
             <Label  Text="Vamos a ver" FontSize="10"/>
+
 
         </StackLayout>
     </ContentPage.Content>

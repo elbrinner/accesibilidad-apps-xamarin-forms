@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Formulario"
+             x:Class="AccesibilidadDemo.Pages.FormularioPage">
+    <ContentPage.Content>
+
+      
+
+
+       
+        <StackLayout Margin="20" x:Name="miFormulario">
+
+
+         
+            <Entry Placeholder="Introducir su nombre aqui"></Entry>
+
+        
+            <Entry Placeholder="Introducir su contraseña aqui"></Entry>
+
+          
+
+           
+
+            <Label Text="Publicidad" AutomationProperties.IsInAccessibleTree="False" ></Label>
+
+            <Switch IsToggled="True" AutomationProperties.IsInAccessibleTree="True" AutomationProperties.HelpText="Quieres recibir publicidad" ></Switch>
+
+            <Label Text="Fecha de nascimiento" x:Name="nascimiento" AutomationProperties.IsInAccessibleTree="True" AutomationProperties.Name="Introducir tu fecha de nacimiento" ></Label>
+
+
+
+           <DatePicker AutomationProperties.IsInAccessibleTree="True" AutomationProperties.LabeledBy="{x:Reference nascimiento }"></DatePicker>
+
+            <Button Text="Registrar" x:Name="sumit" Clicked="Summit_click"> </Button>
+
+
+             
+          
+
+            <ActivityIndicator x:Name="MiActivityIndicator" Margin="30"
+                                   AutomationProperties.IsInAccessibleTree="True"
+                                   AutomationProperties.Name="Indicador de proceso"
+                                   AutomationProperties.HelpText="Solo funciono si me haces clic" Scale="3">
+
+                </ActivityIndicator>
+
+          
+        </StackLayout>
+
+
+    </ContentPage.Content>
+</ContentPage>
