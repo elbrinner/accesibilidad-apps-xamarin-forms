@@ -17,7 +17,11 @@ namespace AccesibilidadDemo.iOS.Services
 
         public void PostVoiceOver(string textToSpeak)
         {
-            PostNotification(1008, new NSString(textToSpeak).Handle);
+            if (IsVoiceOverRunning())
+            {
+                PostNotification(1008, new NSString(textToSpeak).Handle);
+            }
+            
         }
 
         public bool IsVoiceOverRunning()

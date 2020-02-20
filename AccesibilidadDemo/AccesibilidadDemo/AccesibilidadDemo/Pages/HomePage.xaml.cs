@@ -47,6 +47,13 @@ namespace AccesibilidadDemo.Pages
             await Navigation.PushAsync(new TextoContrastePage());
         }
 
+        private async void List_click(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ListaPage());
+        }
+
+        
+
 
     }
 }

@@ -15,6 +15,7 @@
 
             <Button Text="Formulario" Clicked="Formulario_click" TabIndex="1"></Button>
 
+              <Button Text="Lista" Clicked="List_click" TabIndex="10"></Button>
 
             
 

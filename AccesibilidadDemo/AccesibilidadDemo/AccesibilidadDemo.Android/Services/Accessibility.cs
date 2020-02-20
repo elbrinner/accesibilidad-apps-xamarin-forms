@@ -34,7 +34,11 @@ namespace AccesibilidadDemo.Droid.Services
 
         public void PostVoiceOver(string textToSpeak)
         {
-            Toast.MakeText(context, textToSpeak, ToastLength.Short).Show();
+            if (IsVoiceOverRunning())
+            {
+                Toast.MakeText(context, textToSpeak, ToastLength.Short).Show();
+            }
+         
         }
 
         
