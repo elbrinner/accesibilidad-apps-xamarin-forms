@@ -17,6 +17,8 @@
 
               <Button Text="Lista" Clicked="List_click" TabIndex="10"></Button>
 
+            <Button Text="Lista 2" Clicked="List2_click" TabIndex="10"></Button>
+
             
 
 

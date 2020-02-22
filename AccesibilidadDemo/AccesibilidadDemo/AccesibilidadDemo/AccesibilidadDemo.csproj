@@ -13,7 +13,6 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.991211" />
     <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
-    <PackageReference Include="LiveXAML" Version="2.1.73" />
   </ItemGroup>
 
   <ItemGroup>

@@ -27,7 +27,7 @@ namespace AccesibilidadDemo.Pages
             DependencyService.Get<IAccessibility>().PostVoiceOver("Enviando los datos al servidor, espere unos segundos");
 
             //simulando llamada al servidor
-            await Task.Delay(10000);
+            await Task.Delay(5000);
 
             MiActivityIndicator.IsRunning = false;
 
@@ -45,7 +45,7 @@ namespace AccesibilidadDemo.Pages
             await Task.Delay(35000);
             await DisplayAlert("Suceso", "Datos enviados con exito", "0k");
 
-
+            MiActivityIndicator.IsRunning = false;
         }
 
 

@@ -4,11 +4,14 @@
              Title="Imagen"
              x:Class="AccesibilidadDemo.Pages.ImagePage">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout Margin="20">
 
             <Label Text="En esta página, tengo dos imagenes que es un boton en realidad"></Label>
 
-            <Image Source="AppIcon.png" WidthRequest="50" TabIndex="1">
+          
+
+            <Image Source="boton.png"  TabIndex="1" WidthRequest="150" Margin="10" >
                 <Image.GestureRecognizers>
                      <TapGestureRecognizer Tapped="OnImageTapped"></TapGestureRecognizer>
                  </Image.GestureRecognizers>
@@ -16,7 +19,7 @@
             </Image>
 
 
-             <Image Source="AppIcon.png" Margin="50" 
+             <Image Source="boton.png" WidthRequest="150" Margin="10" 
                     AutomationProperties.IsInAccessibleTree="True"
                     AutomationProperties.Name="Boton"
                     AutomationProperties.HelpText="Muestra una alerta">
@@ -29,5 +32,7 @@
             <Button Text="No hago nada"></Button>
 
         </StackLayout>
+
+            </ScrollView>
     </ContentPage.Content>
 </ContentPage>

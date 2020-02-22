@@ -52,7 +52,14 @@ namespace AccesibilidadDemo.Pages
             await Navigation.PushAsync(new ListaPage());
         }
 
-        
+        private async void List2_click(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Lista2Page());
+        }
+
+
+
+
 
 
     }

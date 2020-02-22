@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace AccesibilidadDemo.Pages
 {
-    public partial class ListaPage : ContentPage
+    public partial class Lista2Page : ContentPage
     {
         class Person
         {
@@ -19,15 +19,15 @@ namespace AccesibilidadDemo.Pages
 
             public Color Color { private set; get; }
         };
-
-        public ListaPage()
+        public Lista2Page()
         {
             InitializeComponent();
+
             List<Person> people = new List<Person>
             {
                 new Person("Maria",  Color.Green),
                 new Person("Ana", Color.Green),
-               
+
                 new Person("Pedro", Color.Red),
                 new Person("Juan", Color.Green)
             };
@@ -39,15 +39,15 @@ namespace AccesibilidadDemo.Pages
         {
             var list = (ListView)sender;
             var people = list.ItemsSource as List<Person>;
-            people.Add(new Person( "Alumno " + people.Count,  Color.Green));
+            people.Add(new Person("Alumno " + people.Count, Color.Green));
 
 
-            
+
             lista.ItemsSource = new List<Person>(people);
-          
-            //DependencyService.Get<IAccessibility>().PostVoiceOver("Datos de los alumnos actualizados");
 
-            
+            DependencyService.Get<IAccessibility>().PostVoiceOver("Datos de los alumnos actualizados");
+
+
             list.IsRefreshing = false;
         }
     }
