@@ -21,7 +21,7 @@
          <StackLayout Padding="15,0">
               <Label Text="{Binding Name}" TextColor="{Binding Color}" />
 
-              <Label Text="{Binding Name}" FontSize="20"  />
+             
 
 
          </StackLayout>

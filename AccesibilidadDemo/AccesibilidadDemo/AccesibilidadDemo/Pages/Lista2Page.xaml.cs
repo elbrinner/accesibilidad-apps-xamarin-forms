@@ -7,18 +7,6 @@ namespace AccesibilidadDemo.Pages
 {
     public partial class Lista2Page : ContentPage
     {
-        class Person
-        {
-            public Person(string name, Color color)
-            {
-                this.Name = name;
-                this.Color = color;
-            }
-
-            public string Name { private set; get; }
-
-            public Color Color { private set; get; }
-        };
         public Lista2Page()
         {
             InitializeComponent();
@@ -32,7 +20,7 @@ namespace AccesibilidadDemo.Pages
                 new Person("Juan", Color.Green)
             };
 
-            lista.ItemsSource = people;
+            lista2.ItemsSource = people;
         }
 
         void OnRefresh(object sender, EventArgs e)
@@ -43,7 +31,7 @@ namespace AccesibilidadDemo.Pages
 
 
 
-            lista.ItemsSource = new List<Person>(people);
+            lista2.ItemsSource = new List<Person>(people);
 
             DependencyService.Get<IAccessibility>().PostVoiceOver("Datos de los alumnos actualizados");
 

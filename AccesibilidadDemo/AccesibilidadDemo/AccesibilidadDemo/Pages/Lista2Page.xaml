@@ -14,14 +14,14 @@
             </StackLayout>
 
 
-    <ListView x:Name="lista" IsPullToRefreshEnabled="true" Refreshing="OnRefresh">
+    <ListView x:Name="lista2" IsPullToRefreshEnabled="true" Refreshing="OnRefresh">
   <ListView.ItemTemplate>
     <DataTemplate>
       <ViewCell>
          <StackLayout Padding="15,0">
               <Label Text="{Binding Name}" TextColor="{Binding Color}" />
 
-              <Label Text="{Binding Name}" FontSize="20"  />
+             
 
 
          </StackLayout>
